@@ -113,5 +113,3 @@ Aplicación **Full Stack** diseñada para la gestión operativa de una cocina. P
 * **Validaciones de formulario:** Controlar la integridad de los datos (número de pedido y selección mínima de ítems) antes de impactar el servidor.
 
 ---
-
-**¿Te gustaría que agregue una sección de "Posibles Mejoras" para el futuro, como implementar WebSockets para actualizaciones en tiempo real sin recargar?**
