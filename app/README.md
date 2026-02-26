@@ -9,7 +9,7 @@
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto
+##  Cómo ejecutar el proyecto
 
 > **Nota:** El Backend y el Frontend se encuentran en la misma estructura de carpetas (monorepo).
 
@@ -50,7 +50,7 @@ npm run dev
 
 ---
 
-## 📊 Fundamentación Teórica: Base de Datos No Relacional (NoSQL)
+##  Fundamentación Teórica: Base de Datos No Relacional (NoSQL)
 
 ### ¿Qué es NoSQL?
 
@@ -65,7 +65,7 @@ A diferencia de las bases de datos relacionales (SQL) basadas en tablas rígidas
 
 ---
 
-## 🎯 Problemática y Elección de MongoDB
+##  Problemática y Elección de MongoDB
 
 ### Problemática: Gestión de Comandas en Tiempo Real
 
