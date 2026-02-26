@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+.app {
+  padding: 24px 0px;
+  max-width: 1080px;
+
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 24px;
+}
+
+/* FORM */
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card input,
+.card select,
+.card textarea {
+  background: #0f172a;
+  border: 1px solid #334155;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+}
+
+.primary {
+  background: #6366f1;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary:hover {
+  opacity: 0.9;
+}
+
+/* PIZZAS */
+.pizza-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.pizza-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pizza-item button {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.contador button {
+  background: #334155;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+/* BOARD */
+.board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 280px);
+  gap: 16px;
+  justify-content: flex-start;
+  align-content: start;
+}
+
+.ticket {
+  width: 280px;
+  height: flex;
+  background: #1e293b;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #334155;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.ticket.priority {
+  border: 1px solid #f97316;
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.estado {
+  font-size: 12px;
+  background: #334155;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.items {
+  flex: 1;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.notas {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  flex: 1;
+  background: #334155;
+  border: none;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: #475569;
+}
