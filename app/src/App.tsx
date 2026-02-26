@@ -53,7 +53,7 @@ export default function App() {
     hora: "",
   });
 
-  /* ───────── OBTENER DESDE BACKEND ───────── */
+
   const obtenerTickets = async () => {
     const res = await fetch(API);
     const data = await res.json();
@@ -64,7 +64,7 @@ export default function App() {
     obtenerTickets();
   }, []);
 
-  /* ───────── MÁSCARA HORA ───────── */
+
   const handleHoraChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let val = e.target.value.replace(/\D/g, "");
     if (val.length > 4) val = val.slice(0, 4);
@@ -74,7 +74,6 @@ export default function App() {
     setNuevo({ ...nuevo, hora: val });
   };
 
-  /* ───────── PIZZAS ───────── */
   const sumarPizza = (pizza: string) => {
     setNuevo((prev) => {
       const existe = prev.items.find((i) => i.pizza === pizza);
@@ -106,7 +105,7 @@ export default function App() {
     });
   };
 
-  /* ───────── CREAR ───────── */
+
   const crearTicket = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!nuevo.nro || nuevo.items.length === 0) return;
@@ -129,7 +128,6 @@ export default function App() {
     obtenerTickets();
   };
 
-  /* ───────── AVANZAR ESTADO ───────── */
   const avanzarEstado = async (ticket: Ticket) => {
     const idx = ESTADOS.indexOf(ticket.estado);
     if (idx >= ESTADOS.length - 1) return;
@@ -143,7 +141,7 @@ export default function App() {
     obtenerTickets();
   };
 
-  /* ───────── ELIMINAR ───────── */
+
   const eliminar = async (id: string) => {
     await fetch(`${API}/${id}`, { method: "DELETE" });
     obtenerTickets();
